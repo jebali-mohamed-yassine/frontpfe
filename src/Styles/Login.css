@@ -1,0 +1,118 @@
+/* Import de la police Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Contenu principal */
+.content {
+    margin-left: 25%;
+    width: 75%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+/* Container for login page */
+.login-container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    font-family: 'Roboto', sans-serif; /* Appliquer la police */
+}
+  
+/* Sidebar */
+.custom-sidebar {
+    width: 25%;
+    background-color: #2C3E50; /* Bleu Marine */
+    height: 100vh;
+    padding: 20px;
+    color: #FFFFFF; /* Blanc */
+    font-family: 'Roboto', sans-serif; /* Appliquer la police */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+  
+.sidebar-logo img {
+    max-width: 100%;
+    height: auto;
+}
+  
+/* Login Content */
+.login-content {
+    margin-left: 25%; /* Offset for sidebar */
+    width: 55%; /* Take up remaining space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ensure it takes full height for vertical centering */
+    font-family: 'Roboto', sans-serif; /* Appliquer la police */
+}
+  
+/* Formulaire */
+.form-container {
+    background-color: #ECF0F1; /* Gris Clair */
+    padding: 50px; /* Increased padding for larger form */
+    border-radius: 10px;
+    max-width: 450px; /* Increased width for larger form */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Roboto', sans-serif; /* Appliquer la police */
+}
+  
+.form-container h1 {
+    margin-bottom: 20px;
+    color: #2C3E50; /* Bleu Marine */
+    font-family: 'Roboto', sans-serif; /* Appliquer la police */
+}
+  
+/* Groupes de formulaire */
+.form-group {
+    margin-bottom: 20px;
+}
+  
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: 'Roboto', sans-serif; /* Appliquer la police */
+}
+  
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group select,
+.form-group input[type="email"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #ccccccaa;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif; /* Appliquer la police */
+}
+  
+/* Boutons */
+.form-container button {
+    background-color: #2C3E50; /* Bleu Marine */
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px;
+    font-family: 'Roboto', sans-serif; /* Appliquer la police */
+}
+  
+.form-container button:hover {
+    background-color: #0056b3; /* Bleu plus foncé */
+}
+  
+.error-message {
+    color: red;
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif; /* Appliquer la police */
+}
+

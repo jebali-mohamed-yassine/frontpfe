@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Sidebar container */
+.sidebar-container {
+  width: 25%;
+  background-color: #2C3E50;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-top-right-radius: 10px;
+  padding-top: 20px;
+}
+
+/* Logo container */
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo {
+  max-width: 50%; /* Adjusted the size to be smaller */
+  height: auto;
+}
+
+.custom-sidebar {
+  width: 100%;
+  background-color: #2C3E50; /* Bleu Marine */
+  color: #FFFFFF; /* Blanc */
+  font-family: 'Roboto', sans-serif; /* Appliquer la nouvelle police */
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 20px 0; /* Adjusted to not interfere with logo */
+}
+
+.menu1 {
+  background-color: #FFFFFF; /* Fond blanc */
+  padding: 5px; /* Ajouter du padding pour plus d'espace autour du titre */
+  border-radius: 10px; /* Ajouter des bordures arrondies */
+  text-align: center; /* Centrer le texte */
+  width: 100%; /* Utiliser toute la largeur disponible */
+  color: #2C3E50; /* Couleur de texte spécifique */
+  position: sticky; /* Fixer le titre en haut */
+  top: 0;
+  left: 0;
+}
+
+.menu1 h2 {
+  font-size: 2em; /* Taille de police par défaut pour h2 */
+  font-weight: bold; /* Poids de la police par défaut pour h2 */
+  color: inherit; /* Utiliser la couleur héritée */
+  margin: 0; /* Réinitialiser la marge */
+  padding: 0; /* Réinitialiser le padding */
+  background-color: transparent; /* S'assurer qu'il n'y a pas de couleur de fond */
+}
+
+.menu-content {
+  margin-top: 10px; /* Ajuster la marge pour le titre fixé */
+}
+
+.link {
+  color: #ffffff; /* Blanc */
+  text-decoration: none;
+  display: block;
+  padding: 10px 15px;
+  margin-bottom: 5px; /* Réduire l'espace entre les liens */
+  border-radius: 5px; /* Bordures arrondies pour un effet de bouton */
+}
+
+/* Changement du fond des éléments des sous-menus */
+.custom-submenu .ps-menu-button {
+  background-color: #1A252F; /* Couleur de fond légèrement plus foncée */
+}
+
+.custom-submenu .ps-menu-button.active {
+  background-color: #1A252F; /* Couleur pour l'état actif */
+  color: #ffffff; /* Assurer que le texte reste blanc */
+}
+
+/* Pour changer la couleur du menu sélectionné */
+.custom-submenu .link.active {
+  background-color: #1A252F; /* Couleur pour l'état actif */
+  color: #FFFFFF;
+}
+
+/* Bouton de déconnexion complet */
+.logout-button {
+  padding: 10px 20px;
+  background-color: #2C3E50; /* Bleu Marine */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-submenu .submenu-item {
+  padding-left: 30px; /* Indenter les éléments du sous-menu */
+}
+
+/* Centrer le contenu du menu */
+.custom-sidebar .pro-inner-list-item {
+  text-align: center;
+}
+
+/* Espace entre les sections */
+.space-between-sections {
+  margin-bottom: 5px; /* Ajuster l'espace entre les sections */
+}
+
+/* Remove hover effects from MenuItem and its links */
+.custom-sidebar .ps-menu-button:hover,
+.custom-sidebar .ps-menu-button:focus,
+.custom-sidebar .ps-menu-button .link:hover,
+.custom-sidebar .ps-menu-button .link:focus,
+.custom-sidebar .link:hover,
+.custom-sidebar .link:focus {
+  background-color: #2C3E50 !important; /* Keep the background color unchanged */
+  color: #FFFFFF !important; /* Keep the text color unchanged */
+}
+
+/* Ensuring active state background color */
+.custom-sidebar .custom-menu-item.active,
+.custom-sidebar .ps-menu-button.active,
+.custom-sidebar .submenu-item.active,
+.custom-submenu .ps-menu-button.active,
+.custom-submenu .link.active {
+  background-color: #1A252F !important; /* Explicit background color for active state */
+  color: #FFFFFF !important; /* Ensuring text color is white for active state */
+}
+
+/* Additional specificity for submenu links to remove hover */
+.custom-sidebar .ps-menu-button .link {
+  background-color: inherit !important; /* Keep the background color unchanged */
+  color: inherit !important; /* Keep the text color unchanged */
+}
+
+.custom-sidebar .ps-menu-button .link:hover,
+.custom-sidebar .ps-menu-button .link:focus {
+  background-color: inherit !important; /* Keep the background color unchanged */
+  color: inherit !important; /* Keep the text color unchanged */
+}

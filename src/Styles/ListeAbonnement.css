@@ -1,0 +1,86 @@
+/* ListeAbonnement.css */
+
+/* Conteneur principal pour le tableau */
+.table-content {
+    margin-left: 25%;
+    width: 55%; /* Centrer le contenu */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Conteneur pour la recherche et le tableau */
+.table-wrapper {
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ECF0F1; /* Gris clair */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Conteneur pour la recherche */
+.search-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* Champ de recherche */
+.text-center input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #ccccccaa;
+    border-radius: 5px;
+}
+
+/* Table */
+.custom-table-container {
+    width: 100%;
+    overflow-y: auto;
+    max-height: 400px; /* Limite la hauteur de la table pour ajouter un défilement si nécessaire */
+}
+
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.custom-table thead {
+    position: sticky;
+    top: 0;
+    background-color: #2C3E50; /* Bleu Marine */
+    color: white;
+    z-index: 1;
+}
+
+.custom-table th,
+.custom-table td {
+    border: 1px solid #ddd;
+    padding: 16px;
+    text-align: center;
+}
+
+.custom-table th {
+    background-color: #2C3E50; /* Bleu Marine */
+    color: white;
+}
+
+.custom-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Gris très clair */
+}
+
+.custom-table tbody tr:hover {
+    background-color: #e0e0e0; /* Gris clair au survol */
+}
+
+.custom-table td.text-right {
+    text-align: right;
+}

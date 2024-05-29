@@ -1,0 +1,119 @@
+/* Import de la police Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Contenu principal du tableau de bord */
+.content {
+  margin-left: 25%;
+  width: 75%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Informations du tableau de bord */
+.dashboard-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.info-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ECF0F1; /* Gris clair */
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 15px 20px;
+  margin: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  max-width: 250px;
+  font-family: 'Roboto', sans-serif; /* Appliquer la police */
+}
+
+.info-icon {
+  font-size: 24px;
+  color: #0056b3;
+  margin-right: 10px;
+}
+
+.info-title {
+  font-weight: bold;
+  margin-right: 10px;
+  color: #2C3E50; /* Bleu marine */
+}
+
+.info-value {
+  font-size: 18px;
+  color: #333;
+}
+
+/* Boutons de navigation */
+.tab-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tab-buttons button {
+  background-color: #2C3E50; /* Bleu marine */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: 'Roboto', sans-serif; /* Appliquer la police */
+}
+
+.tab-buttons button:hover {
+  background-color: #0056b3; /* Bleu plus foncé */
+}
+
+.tab-buttons button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #0056b3;
+}
+
+/* Conteneur de graphiques */
+.chart-container {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px; /* Augmenter la largeur maximale */
+  height: 500px; /* Augmenter la hauteur */
+  margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif; /* Appliquer la police */
+}
+
+/* Styles généraux pour les titres */
+h1, h2 {
+  color: #2C3E50; /* Bleu marine */
+  font-family: 'Roboto', sans-serif; /* Appliquer la police */
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+/* Messages d'erreur */
+.error-message {
+  color: red;
+  margin-top: 10px;
+  font-family: 'Roboto', sans-serif; /* Appliquer la police */
+}
